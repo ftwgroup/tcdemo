@@ -42,7 +42,7 @@ text {
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner">
 <div class="container">
-<a href="./Sterlinks_files/Sterlinks.html" class="brand" style="font-weight:bold;">Torrey Cove Capital Partners</a>
+<a href="./Sterlinks_files/Sterlinks.html" class="brand" style="font-weight:bold;">TorreyCove Capital Partners, LLC</a>
 <!--<ul class="nav">
 <li class="divider-vertical"></li>
 <li class="">
@@ -228,16 +228,16 @@ var dataset = {
 };
 
 var legend = {
-    portfolioCompanies: ['Company 1','Company 2','Company 3','Company 4', 'Company 5'],
-    geography: ['Asia','Europe','North America'],
-    assetClassExposure: ['Venture Capital','Special Situations','Corporate Finance'],
-    subAssetClassExposure: ['Corporate Finace','Premiun Corporate Fiannce','Large Corporate Finance'],
-    fundExposure: ['NEA IX','Blackstone V','EQT III','Apollo IV'],
+    portfolioCompanies: [['Company 1'],'Company 2','Company 3','Company 4', 'Company 5', 'Company 6'],
+    geography: [['Asia'],['Europe'],['North America'],[''],[''],['']],
+    assetClassExposure: ['Venture Capital','Special Situations','Corporate Finance','','',''],
+    subAssetClassExposure: ['Corporate Finace','Premiun Corporate Fiannce','Large Corporate Finance','','',''],
+    fundExposure: ['NEA IX','Blackstone V','EQT III','Apollo IV','',''],
 }
 
 var pieTitle = []
 
-var width = 960,
+var width = 500,
     height = 500,
     radius = Math.min(width, height) / 2;
 
@@ -254,7 +254,7 @@ var svg = d3.select(".inner-tile-container").append("svg")
     .attr("width", width)
     .attr("height", height)
   .append("g")
-    .attr("transform", "translate(" + width / 2.6 + "," + height / 2 + ")");
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 var path = svg.selectAll("path")
     .data(pie(dataset.geography))
@@ -265,6 +265,8 @@ var path = svg.selectAll("path")
     .on('click', clickRadio); // store the initial values
 
 d3.selectAll("input").on("change", change);
+
+//$('.inner-tile-container').append('<table></table>');
 
 var timeout = setTimeout(function() {
   d3.select("input").property("checked", true).each(change);
@@ -281,10 +283,38 @@ function clickRadio() {
     nClicks++;
 }
 
+var table = d3.select('.inner-tile-container').append('table').append('tbody');
+var rows = table.selectAll('tr')
+    .data(legend.geography)
+    .enter()
+    .append('tr'); 
+
+var cells = rows.selectAll("td")
+    .data(function(row,i) {
+        console.log(row);
+        return [{color:color(i), value:row}];
+    })
+    .enter()
+    .append('td')
+    .attr('style',function(d){
+        return 'background-color:'+d.color+';';
+    })
+    .text(function(d){
+        return d.value;
+    });
+
+function drawLegent(data) {
+    $('table').fadeOut();
+    newTableHtml = 
+    $('table').fadeIn();
+}
+
 function change() {
   clearTimeout(timeout);
   path = path.data(pie(dataset[this.value])); // update the data
   path.transition().duration(750).attrTween("d", arcTween); // redraw the arcs
+  drawLegend(legend[this.value]);
+
 }
 
 // Store the displayed angles in _current.
