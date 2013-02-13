@@ -198,13 +198,13 @@ Contact Sterlinks
 <div class="mod-block-light inner-tile-header">
 <div class="heading-text row-fluid section-heading" style="">
 <div class="pull-left subheading">
-    Portfolio Reports
+    Geography
 </div>
 <div class="pull-right">
 <button class="btn btn-primary btn-mini modal-btn new-note-btn" data-target="#modal_shell" data-toggle="modal" data-type="note" href="/modal/contact_tracker_modals/new?remote=true" id="new_contact_tracker_btn">
 Export to Excel
 </button>
-<a class="btn help-popover" data-content="Create Notes to keep track of conversations, events and meetings. &lt;br&gt;&lt;br&gt;Once a Note is created, you can choose to share it with any colleague on Sterlinks, on a case-by-case basis.  " data-placement="bottom" href="http://sterlinks.net/dashboard#" rel="popover" style="margin-top:-1px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; font-weight:bold; padding-top:3px; padding-left:8px; padding-right:8px; padding-bottom:3px;" data-original-title="">
+<a class="btn help-popover" data-content="Help text can be placed here to assist your clients in understanding graphs and charts" data-placement="bottom" href="http://sterlinks.net/dashboard#" rel="popover" style="margin-top:-1px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; font-weight:bold; padding-top:3px; padding-left:8px; padding-right:8px; padding-bottom:3px;" data-original-title="">
 ?
 </a>
 
@@ -243,7 +243,13 @@ var legend = {
     fundExposure: ['NEA IX','Blackstone V','EQT III','Apollo IV','',''],
 }
 
-var pieTitle = []
+var pieTitle = {
+    portfolioCompanies: 'Portfolio Companies',
+    geography: 'Geography',
+    assetClassExposure: 'Asset Class Exposure',
+    subAssetClassExposure: 'Sub-Asset Class Exposure',
+    fundExposure: 'Fund Exposure',
+}
 
 var width = 500,
     height = 500,
@@ -361,7 +367,8 @@ function change() {
   path = path.data(pie(dataset[this.value])); // update the data
   path.transition().duration(750).attrTween("d", arcTween); // redraw the arcs
   drawLegend(legend[this.value]);
-
+  console.log('change', this.value);
+  $('.subheading').html(pieTitle[this.value]);
 }
 
 // Store the displayed angles in _current.
