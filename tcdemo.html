@@ -29,6 +29,14 @@ text {
   font: 10px sans-serif;
 }
 
+table {
+    display: inline-block;
+    position: relative;
+    top: -261px;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
 /*form {
   position: absolute;
   right: 10px;
@@ -262,7 +270,9 @@ var path = svg.selectAll("path")
     .attr("fill", function(d, i) { return color(i); })
     .attr("d", arc)
     .each(function(d) { this._current = d; })
-    .on('click', clickRadio); // store the initial values
+    .on('click', clickRadio) // store the initial values
+    .on('mousedown', removeTable);
+
 
 d3.selectAll("input").on("change", change);
 
@@ -292,21 +302,58 @@ var rows = table.selectAll('tr')
 var cells = rows.selectAll("td")
     .data(function(row,i) {
         console.log(row);
-        return [{color:color(i), value:row}];
+        if (row == ''){
+            return [{color:color(i),value:''},{color:undefined, value:row}]
+        } else {
+            return [{color:color(i),value:'gg'},{color:undefined, value:row}];
+    }
     })
     .enter()
     .append('td')
     .attr('style',function(d){
-        return 'background-color:'+d.color+';';
+        if (d.value == '') {
+            return 'display:none;';
+        } else {
+            return 'background-color:'+d.color+';color:' + d.color + ';';
+        }
     })
     .text(function(d){
         return d.value;
     });
 
-function drawLegent(data) {
-    $('table').fadeOut();
-    newTableHtml = 
-    $('table').fadeIn();
+function drawLegend(data) {
+    table.selectAll('tr').remove();
+var rows = table.selectAll('tr')
+    .data(data)
+    .enter()
+    .append('tr'); 
+
+var cells = rows.selectAll("td")
+    .data(function(row,i) {
+        console.log(row);
+        if (row == ''){
+            return [{color:color(i),value:''},{color:undefined, value:row}]
+        } else {
+            return [{color:color(i),value:'gg'},{color:undefined, value:row}];
+    }
+    })
+    .enter()
+    .append('td')
+    .attr('style',function(d){
+        if (d.value == '') {
+            return 'display:none;';
+        } else {
+            return 'background-color:'+d.color+';color:' + d.color + ';';
+        }
+    })
+    .text(function(d){
+        return d.value;
+    });
+    table.transition(250).style('opacity','1');
+}
+
+function removeTable() {
+    table.transition(250).style('opacity','0');
 }
 
 function change() {
