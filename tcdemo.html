@@ -207,15 +207,15 @@ New Report
 </div>
 <div class="inner-tile-container">
 
-<form>
+<form id="radios" style="display:none">
   <label><input type="radio" name="dataset" value="geography" checked="">Geography</label>
   <label><input type="radio" name="dataset" value="assetClassExposure">Asset Class Exposure</label>
-  <label><input type="radio" name="dataset" value="subAssetClassExposure">Sub-Asset Class Exposure</label>
+  <label><input class="first" type="radio" name="dataset" value="subAssetClassExposure">Sub-Asset Class Exposure</label>
   <label><input type="radio" name="dataset" value="fundExposure">Fund Exposure</label>
   <label><input type="radio" name="dataset" value="portfolioCompanies">Portfolio Companies</label>
 </form>
 <script src="http://d3js.org/d3.v3.min.js"></script>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script>
 
 var dataset = {
@@ -251,13 +251,25 @@ var path = svg.selectAll("path")
   .enter().append("path")
     .attr("fill", function(d, i) { return color(i); })
     .attr("d", arc)
-    .each(function(d) { this._current = d; }); // store the initial values
+    .each(function(d) { this._current = d; })
+    .on('click', clickRadio); // store the initial values
 
 d3.selectAll("input").on("change", change);
 
 var timeout = setTimeout(function() {
   d3.select("input").property("checked", true).each(change);
 }, 2000);
+
+var currentRadio = $('input:radio');
+var nClicks = 1
+function clickRadio() {
+    console.log("pie chart clicked", this.value);
+    if (typeof currentRadio[nClicks] == "undefined") {
+        nClicks = 0;
+    }
+    currentRadio[nClicks].click();
+    nClicks++;
+}
 
 function change() {
   clearTimeout(timeout);
@@ -302,6 +314,7 @@ function arcTween(a) {
 <script>
 $(function(){$.each(window._onload_functions,function(index,f){$(f)});});
 </script>
+
 </footer>
 
 
