@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://sterlinks.net/dashboard -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>
+TorreyCove Demo
+</title>
+<link href="./Sterlinks_files/application-63d8e9b7edcff42e44996fd955da1b72.css" media="screen" rel="stylesheet" type="text/css">
+<!-- Stop paying jquery tax http://samsaffron.com/archive/2012/02/17/stop-paying-your-jquery-tax -->
+<script type="text/javascript" async="" src="./Sterlinks_files/5c9a2cf27ed74ab5ab609591ed64550f9bbffb3d.1.js"></script><script type="text/javascript" async="" src="./Sterlinks_files/i.js"></script><script type="text/javascript" async="" src="./Sterlinks_files/mixpanel-2.2.min.js"></script><script>
+  //<![CDATA[
+    window._onload_functions = [];window.$ = function(cb){window._onload_functions.push(cb);};
+  //]]>
+</script>
+<script>
+  //<![CDATA[
+    var _kmq = _kmq || [];
+    var _kmk = _kmk || '5c9a2cf27ed74ab5ab609591ed64550f9bbffb3d';
+    
+    function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+    }
+    
+    _kms('//i.kissmetrics.com/i.js');
+    _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+    
+    $(function(){
+      _kmq.push(['record', "Viewed Dashboard"]);
+    })
+  //]]>
+</script>
+
+<script>
+  //<![CDATA[
+    $(function(){
+      _kmq.push(['identify', "ipsheeta@ftwgroup.com"]);
+    })
+  //]]>
+</script>
+
+
+<!-- / Mixpanel -->
+<script>
+  //<![CDATA[
+    (function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+    typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
+    e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+    mixpanel.init("682385fa9cb6fbbac6f9f1dea0ff0af3");
+    
+    $(function(){
+      mixpanel.track("Viewed Dashboard");
+    })
+  //]]>
+</script>
+
+
+<meta content="authenticity_token" name="csrf-param">
+<meta content="gEZn9VFDghs5luzFfUsFcl6z5/PE0+q1mvvtaC2NhUw=" name="csrf-token">
+
+</head>
+<body class="dashboard" data-action="index" data-controller="dashboard" style="background-color:white">
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container">
+<a href="./Sterlinks_files/Sterlinks.html" class="brand" style="font-weight:bold;">TORREYCOVE</a>
+<ul class="nav">
+<li class="divider-vertical"></li>
+<li class="">
+<a href="http://sterlinks.net/capital_engine">Partner Due Diligence</a>
+</li>
+<li class="divider-vertical"></li>
+<li class="">
+<a href="http://sterlinks.net/network_builder">Network Builder</a>
+</li>
+<li class="divider-vertical"></li>
+<li class="">
+<a href="http://sterlinks.net/contact_trackers">Notes</a>
+</li>
+<li class="divider-vertical"></li>
+</ul>
+<div class="pull-right" style="width:405px;">
+<div class="pull-left">
+<form accept-charset="UTF-8" action="http://sterlinks.net/search/index" class="navbar-search form-search" method="get" style="margin-top: 0px;"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+<select class="hide" id="search_area" name="area"><option value="people">People</option>
+<option value="company">Companies</option>
+<option value="my_contacts">My Contacts</option>
+<option value="my_notes">My Notes</option>
+<option value="all">All</option></select>
+<div style="width:345px;">
+<div style="position:relative;">
+<div class="search-nav-dropdown">
+<div class="add-on" id="search_area_dropdown" style="background:#EEE;height:20px;border-radius: 3px 0 0 3px;-moz-border-radius: 3px 0 0 3px;-webkit-border-radius: 3px 0 0 3px; padding:5px 5px 3px 10px; width: auto;float:right;border-top-color:rgba(0, 0, 0, 0.0980392);">
+<ul class="nav" style="margin-right: 5px;">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="http://sterlinks.net/dashboard#" style="padding:0;color:rgba(25, 25, 25, 0.75);text-shadow:none;background:#EEE !important;">
+<b class="selected-option-preview">
+People
+</b>
+<b class="caret" style="color:rgba(25, 25, 25, 0.65);border-top-color:black;"></b>
+</a>
+<ul class="dropdown-menu" style="text-align:left;text-shadow:none;">
+<li>
+<a class="search-option selected-option" data-select="people">
+People
+</a>
+</li>
+<li>
+<a class="search-option" data-select="company">
+Companies
+</a>
+</li>
+<li>
+<a class="search-option" data-select="my_contacts">
+My Contacts
+</a>
+</li>
+<li>
+<a class="search-option" data-select="my_notes">
+My Notes
+</a>
+</li>
+<li>
+<a class="search-option" data-select="all">
+All
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="search-nav-input">
+<input autocomplete="off" id="search" name="search" placeholder="Search" style="border-radius:0; height:18px; padding:4px; width:136px;border-color:rgba(0, 0, 0, 0.0980392);border-right:none;" type="text" value="" class="ui-autocomplete-input" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+</div>
+<!-- %div{style:'position:absolute;top:5px;left:320px; right:0; background:#EEE;height:20px;border-radius: 0 3px 3px 0;-moz-border-radius: 0 3px 3px 0;-webkit-border-radius: 0 3px 3px 0; padding:4px 5px;'} -->
+<button class="btn search-nav-btn" id="navbar_search_submit" style="border-left: none;border:none;line-height:19px; background:white; margin-top:5px; margin-right:2px;" type="submit">
+<i class="icon-search" style="margin-left: -2px;"></i>
+</button>
+</div>
+</div>
+</form>
+
+</div>
+<div class="pull-right">
+<ul class="nav" style="margin-right:0px;">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="http://sterlinks.net/dashboard#" id="settings" style="margin-top:-2px;">
+<div class="icon icon-user icon-white"></div>
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu user-action-menu">
+<li>
+<a href="http://sterlinks.net/conversations"><span>
+Messages
+</span>
+</a></li>
+<li>
+<a href="http://sterlinks.net/users/4ff5e4b5c1a4c57898000008/edit">Edit Profile</a>
+</li>
+<li>
+<a href="http://sterlinks.net/users/4ff5e4b5c1a4c57898000008">View Profile</a>
+</li>
+<li>
+<a class="modal-btn" data-target="#modal_shell" data-toggle="modal" data-type="feedback" href="http://sterlinks.net/modal/feedback_modals/new" style="margin-right:5px;">
+Contact Sterlinks
+</a>
+</li>
+<li>
+<a href="http://sterlinks.net/users/sign_out" data-method="delete" rel="nofollow">Logout</a>
+</li>
+<li class="divider"></li>
+<li>
+<a href="http://sterlinks.net/terms_of_service" target="__blank">Terms of Service</a>
+</li>
+<li>
+<a href="http://sterlinks.net/privacy_policy" target="__blank">Privacy Policy</a>
+</li>
+</ul>
+</li>
+<li class="divider-vertical"></li>
+</ul>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container" style="margin-top:15px;">
+<div class="row" style="margin-top:5px;">
+<div class="span12" id="site_wide_flash">
+<div class="flash">
+<div class="alert alert-success align-center hide in slide" id="site_notice">
+<button class="close" data-dismiss="alert">
+×
+</button>
+<span>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+<!--<div class="modal fade" data-backdrop="static" data-url="/dashboard/step2" id="new_user_modal" style="width: 800px; margin: -325px 0px 0px -400px; display: none; " aria-hidden="true"><div class="modal-header">-->
+<!--<button class="close" data-dismiss="modal" type="button">-->
+<!--x-->
+<!--</button>-->
+<!--<h2>-->
+<!--<div class="white-text align-center" style="width:50px; height: 50px; border-radius:25px; background:rgba(15,150,25,0.8);font-size:40px;">-->
+<!--<span style="display:inline-block;margin-top:6px;margin-right:2px;">-->
+<!--2-->
+<!--</span>-->
+<!--</div>-->
+<!--</h2>-->
+<!--</div>-->
+<!--<div class="modal-body new-user-step2" style="height:450px;max-height:450px;">-->
+<!--<form accept-charset="UTF-8" action="http://sterlinks.net/users/4ff5e4b5c1a4c57898000008" class="form-horizontal" data-remote="true" id="edit_user_4ff5e4b5c1a4c57898000008" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="_method" type="hidden" value="put"><input name="authenticity_token" type="hidden" value="gEZn9VFDghs5luzFfUsFcl6z5/PE0+q1mvvtaC2NhUw="></div>-->
+<!--<div class="row-fluid">-->
+<!--<div class="span12" style="text-align:center !important;">-->
+<!--<div class="heading-text row-fluid section-heading" style="">-->
+<!--<div class="subheading">-->
+<!--What types of partners do you have opportunities for?-->
+<!--</div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--</div>-->
+<!--<div class="row-fluid">-->
+<!--<div class="span2"></div>-->
+<!--<div class="span8">-->
+<!--<div class="row-fluid">-->
+<!--<div class="span6">-->
+<!--<ul style="list-style:none;">-->
+<!--<li>-->
+<!--<label class="checkbox inline" for="user_has_capital_partners"><input name="user[has_capital_partners]" type="hidden" value="0"><input id="user_has_capital_partners" name="user[has_capital_partners]" type="checkbox" value="1">-->
+<!--Capital Partners-->
+<!--</label></li>-->
+<!--<li>-->
+<!--<label class="checkbox inline" for="user_has_joint_venture_partners"><input name="user[has_joint_venture_partners]" type="hidden" value="0"><input id="user_has_joint_venture_partners" name="user[has_joint_venture_partners]" type="checkbox" value="1">-->
+<!--Joint Venture Partners-->
+<!--</label></li>-->
+<!--<li>-->
+<!--<label class="checkbox inline" for="user_has_investment_advisors"><input name="user[has_investment_advisors]" type="hidden" value="0"><input id="user_has_investment_advisors" name="user[has_investment_advisors]" type="checkbox" value="1">-->
+<!--Investment Advisors-->
+<!--</label></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--<div class="span6">-->
+<!--<ul style="list-style:none;">-->
+<!--<li>-->
+<!--<label class="checkbox inline" for="user_has_operating_partners"><input name="user[has_operating_partners]" type="hidden" value="0"><input id="user_has_operating_partners" name="user[has_operating_partners]" type="checkbox" value="1">-->
+<!--Operating Partners-->
+<!--</label></li>-->
+<!--<li>-->
+<!--<label class="checkbox inline" for="user_has_development_partners"><input name="user[has_development_partners]" type="hidden" value="0"><input id="user_has_development_partners" name="user[has_development_partners]" type="checkbox" value="1">-->
+<!--Development Partners-->
+<!--</label></li>-->
+<!--<li>-->
+<!--<label class="checkbox inline" for="user_has_other"><input name="user[has_other]" type="hidden" value="0"><input id="user_has_other" name="user[has_other]" type="checkbox" value="1">-->
+<!--Other-->
+<!--</label><input id="user_other_text" name="user[other_text]" placeholder="Other" size="30" style="visibility:hidden;" type="text" value="">-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</form>-->
+<!--</div>-->
+<!--<div class="modal-footer">-->
+<!--<div class="row-fluid">-->
+<!--<div class="span2">-->
+<!--<div class="pull-left">-->
+<!--<a href="http://sterlinks.net/dashboard/step1" class="new-user-action btn btn-info">Back</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="span8">-->
+<!--<div>-->
+<!--<p class="muted pull-left">-->
+<!--Percent Completed: 25%-->
+<!--</p>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--<div class="progress progress-striped active">-->
+<!--<div class="bar" style="width:25%;"></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="span2">-->
+<!--<div class="pull-right">-->
+<!--<a href="http://sterlinks.net/dashboard/step3" class="new-user-action btn btn-success">Next</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+</div>
+<!--<div class="row">-->
+<!--<div class="span12">-->
+<!--<div class="section-heading heading-text">-->
+<!--<div class="span4" style="margin-left:0px; min-height:50px;">-->
+<!--<div class="pull-left" style=" min-height:60px; margin-right:10px;">-->
+<!--<img alt="0_pk_ha9pu-nft9ltgax3xanxlrn8aqqiga_bxang2fln3ikqj0cp2xqdgovhab1gltbtoo1fzmvob?awsaccesskeyid=akiaj6sncu6uzul5xkca&amp;signature=rxtqzksrshcw%2bcffphigupg7uoo%3d&amp;expires=1360734412" class="thumbnail" height="45" src="./Sterlinks_files/0_Pk_hA9pu-nFT9ltgAX3xANxlrN8AqqigA_BxANg2flN3IKqj0CP2xqdGOVhaB1GltbTOO1fzMvOB" style="margin-top:-2px;margin:auto;" width="45">-->
+<!--</div>-->
+<!--<div class="pull-left" style="width:300px;">-->
+<!--Welcome,-->
+<!--<a href="http://sterlinks.net/users/4ff5e4b5c1a4c57898000008/edit">Ms. Furtado</a>-->
+<!--<p class="muted" id="announcement_holder" style="font-size:12px;margin-top:5px;">-->
+
+<!--</p>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--<div class="span4">-->
+<!--<div id="announcement_form" style="margin-top:-5px;">-->
+<!--<form accept-charset="UTF-8" action="http://sterlinks.net/users/4ff5e4b5c1a4c57898000008/announcements" class="form-horizontal" data-remote="true" data-type="json" id="new_announcement" method="post" style="margin-bottom:0px;"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="gEZn9VFDghs5luzFfUsFcl6z5/PE0+q1mvvtaC2NhUw="></div>-->
+<!--<div class="inner-tile-container" style="min-height:70px; background:none;">-->
+<!--&lt;!&ndash;<div class="text-area-announcment">&ndash;&gt;-->
+<!--&lt;!&ndash;<textarea cols="40" id="announcement_content" name="announcement[content]" placeholder="Update your colleagues on Sterlinks" rows="20" style="width:98%; height:30px; border-radius:10px;"></textarea>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--<div class="announcement-container pull-right">-->
+<!--<input class="btn btn-primary btn-mini" id="set_annoucement_btn" name="commit" type="submit" value="Share News">-->
+<!--</div>-->
+<!--<div class="clear"></div>-->
+<!--</div>-->
+<!--</form>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--<div class="span3">-->
+<!--<table style="margin-top:5px;">-->
+<!--<tbody><tr>-->
+<!--<td class="help-popover" data-content="Please request access at the bottom of the dashboard to enable this feature and see prospective investment partners." data-placement="bottom" rel="popover" style="width:60px; border-right:1px solid #CCC; padding:5px;" data-original-title="">-->
+<!--<span class="stat-num">-->
+<!--<a class="modal-btn" data-target="#modal_shell" data-toggle="modal" href="http://sterlinks.net/modal/no_capital_engine_modal">-->
+<!--0-->
+<!--</a>-->
+<!--</span>-->
+<!--<span class="stat-label">-->
+<!--<br>-->
+<!--Prospects-->
+<!--</span>-->
+<!--</td>-->
+<!--<td class="help-popover" data-content="Network Builder Stats Placeholder" data-placement="bottom" rel="popover" style="width:60px; padding:5px; border-right:1px solid #CCC;" data-original-title="">-->
+<!--<span class="stat-num">-->
+<!--<a href="http://sterlinks.net/network_builder">11</a>-->
+<!--</span>-->
+<!--<span class="stat-label">-->
+<!--<br>-->
+<!--Network-->
+<!--</span>-->
+<!--</td>-->
+<!--<td class="help-popover" data-content="Your private Sterlinks Notes" data-placement="bottom" rel="popover" style="width:60px; border-right:1px solid #CCC; padding:5px;" data-original-title="">-->
+<!--<span class="stat-num">-->
+<!--<a href="http://sterlinks.net/contact_trackers">1</a>-->
+<!--</span>-->
+<!--<span class="stat-label">-->
+<!--<br>-->
+<!--Notes-->
+<!--</span>-->
+<!--</td>-->
+<!--<td class="help-popover" data-content="Unread Messages" data-placement="bottom" rel="popover" style="width:45px; padding:5px;" data-original-title="">-->
+<!--<span class="stat-num">-->
+<!--<a href="http://sterlinks.net/conversations">0</a>-->
+<!--</span>-->
+<!--<span class="stat-label">-->
+<!--<br>-->
+<!--Messages-->
+<!--</span>-->
+<!--</td>-->
+<!--</tr>-->
+<!--</tbody></table>-->
+<!--</div>-->
+<!--<div class="span1">-->
+<!--<div class="pull-right">-->
+<!--<a class="btn help-popover" data-content="Identify, diligence and build relationships with capital and operating partners globally via the Sterlinks Dashboard. " data-placement="bottom" href="http://sterlinks.net/dashboard#" rel="popover" style="margin-top:-1px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; font-weight:bold; padding-top:3px; padding-left:8px; padding-right:8px; padding-bottom:3px;" data-original-title="">-->
+<!--?-->
+<!--</a>-->
+
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<div class="row vertical-block" style="margin-left:50px;">
+<div class="span12 center-col">
+<div class="inner-tile" style="min-height:200px;">
+<div class="mod-block-light inner-tile-header">
+<div class="heading-text row-fluid section-heading" style="">
+<div class="pull-left subheading">
+Financial Reporting
+</div>
+<div class="pull-right">
+<button class="btn btn-primary btn-mini modal-btn new-note-btn" data-target="#modal_shell" data-toggle="modal" data-type="note" href="/modal/contact_tracker_modals/new?remote=true" id="new_contact_tracker_btn">
+New Report
+</button>
+<a class="btn help-popover" data-content="Create Notes to keep track of conversations, events and meetings. &lt;br&gt;&lt;br&gt;Once a Note is created, you can choose to share it with any colleague on Sterlinks, on a case-by-case basis.  " data-placement="right" href="http://sterlinks.net/dashboard#" rel="popover" style="margin-top:-1px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; font-weight:bold; padding-top:3px; padding-left:8px; padding-right:8px; padding-bottom:3px;" data-original-title="">
+?
+</a>
+
+
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<!--<div class="inner-tile-container mod-block-white" data-minheight="230px" id="memo_list" style="min-height: 300px; background:white;"><div class="row-fluid" id="dashboard_memos" style="min-height:230px; padding-bottom: 25px;"><div class="span4 single-memo memo-item" data-userid=" 4ff5f076c1a4c57898000015 " style="border: 1px solid rgb(204, 204, 204); border-radius: 5px; height: 230px; overflow: hidden; background-position: initial initial; background-repeat: initial initial; background:white ">-->
+  <!--<div class="row-fluid">-->
+    <!--<div class="span4">-->
+      <!---->
+      	<!--<img class="thumbnail" height="45" src="./Sterlinks_files/nyc1_thumbnail.jpg" width="45" style="margin:5px;">-->
+	    <!---->
+    <!--</div>-->
+    <!--<div class="span7" style="margin-top:5px;">-->
+      <!--<div>-->
+        <!---->
+          <!--<a href="http://sterlinks.net/contact_trackers/50f087429cccb040eb000013/edit" class="tooltip-anchor" rel="tooltip" data-original-title="Edit Note">Julian Threatt</a>-->
+        <!---->
+        <!---->
+          <!---->
+            <!--<p class="muted" style="margin:0;padding:0;">-->
+              <!--FTW Investment Manager-->
+            <!--</p>-->
+          <!---->
+          <!--<p style="margin:0;padding:0;color:#AAA;">-->
+            <!---->
+          <!--</p>-->
+        <!---->
+        <!--This is a new note-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="span1" style="margin-left:0px;position:relative;">-->
+      <!--<div class="row-fluid" style="position:absolute; top:3px; right:0;">-->
+        <!---->
+        <!---->
+        <!--<div class="span12 memo-actions" style="display: none; ">-->
+          <!---->
+            <!--<div class="message-btn icon-hover tooltip-anchor" rel="tooltip" data-original-title="Send a message to Julian Threatt">-->
+
+              <!--<a class="modal-btn" data-target="#modal_shell" data-toggle="modal" data-type="message" data-username="Julian Threatt" href="http://sterlinks.net/modal/message_modals/new?user_id=4ff5f076c1a4c57898000015">-->
+                <!--<i class="icon-envelope"></i>-->
+              <!--</a>-->
+            <!--</div>-->
+          <!---->
+          <!--&lt;!&ndash;-->
+          <!--<div class="edit-memo-btn icon-hover tooltip-anchor" rel="tooltip" data-original-title="Edit">-->
+            <!--<a href="/contact_trackers/50f087429cccb040eb000013/edit"><i class="icon-pencil"></i>-->
+            <!--</a>-->
+          <!--</div>-->
+          <!--&ndash;&gt;-->
+          <!--&lt;!&ndash; -->
+            <!--<div class="view-memo-btn icon-hover tooltip-anchor" rel="tooltip" data-original-title="View">-->
+              <!--<a href="/contact_trackers/50f087429cccb040eb000013"><i class="icon-eye-open"></i>-->
+              <!--</a>-->
+            <!--</div>-->
+          <!--&ndash;&gt;-->
+          <!---->
+            <!--<div class="share-memo-btn icon-hover tooltip-anchor" data-memoid="50f087429cccb040eb000013" rel="tooltip" data-original-title="Share">-->
+              <!--<a class="modal-btn" data-id="memo_50f087429cccb040eb000013" data-target="#modal_shell" data-toggle="modal" href="http://sterlinks.net/modal/contact_tracker_modals/share/50f087429cccb040eb000013" data-type="share_note">-->
+                <!--<i class="icon-share-alt"></i>-->
+              <!--</a>-->
+            <!--</div>-->
+            <!--<div class="delete-memo-btn icon-hover tooltip-anchor" rel="tooltip" data-original-title="Delete">-->
+              <!--<a class="delete-memo" href="http://sterlinks.net/contact_trackers/50f087429cccb040eb000013" data-confirm="Are you sure?" data-method="delete" rel="nofollow" data-remote="true" data-type="json"><i class="icon-trash"></i>-->
+              <!--</a>-->
+            <!--</div>-->
+          <!---->
+          <!--<div class="print-memo-btn icon-hover tooltip-anchor" rel="tooltip" data-original-title="Print">-->
+            <!--<a href="http://sterlinks.net/contact_trackers/50f087429cccb040eb000013.pdf" target="__blank"><i class="icon-print"></i>-->
+            <!--</a>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="row-fluid">-->
+    <!--<div class="span12">-->
+      <!--<div style="margin:5px; font-size:12px;">-->
+        <!--<ul><li>Julian says there's something to fix here.</li></ul>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div></div>-->
+
+<!--</div>-->
+</div>
+
+</div>
+<!--<div class="span4 right-col">-->
+<!--<div class="inner-tile">-->
+<!--<div class="mod-block-light inner-tile-header">-->
+<!--<div class="heading-text row-fluid section-heading" style="">-->
+<!--<div class="pull-left subheading">-->
+<!--Tasks&nbsp;-->
+<!--</div>-->
+<!--<div class="pull-right">-->
+<!--<button class="btn btn-primary btn-mini new-task modal-btn new-task" data-target="#modal_shell" data-toggle="modal" data-type="task" href="/modal/task_modals/new" id="new_task">-->
+<!--New Task-->
+<!--</button>-->
+<!--&lt;!&ndash;<a class="btn help-popover" data-content="View tasks added from Notes taken on contacts." data-placement="bottom" href="http://sterlinks.net/dashboard#" rel="popover" style="margin-top:-1px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; font-weight:bold; padding-top:3px; padding-left:8px; padding-right:8px; padding-bottom:3px;" data-original-title="">&ndash;&gt;-->
+<!--&lt;!&ndash;?&ndash;&gt;-->
+<!--&lt;!&ndash;</a>&ndash;&gt;-->
+
+
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="mod-block-white inner-tile-container" style="min-height:300px; background:white;">-->
+<!--<div id="todo_container"><div id="todo_body" style="min-height:260px;">-->
+  <!--<table style="margin-bottom:0px;" class="table table-bordered todos-table">-->
+  <!--<thead>-->
+    <!--<tr><th style="width:10%;">-->
+      <!--Due-->
+    <!--</th>-->
+    <!--<th style="width:80%">-->
+      <!--Task-->
+    <!--</th>-->
+    <!--<th style="width:5%">-->
+    <!--</th>-->
+  <!--</tr></thead>-->
+  <!--<tbody id="todo_list" style="border-top: 1px solid rgb(204, 204, 204);"><tr class="todo-item-container"><td>-->
+  <!--<span class="muted pull-left">-->
+    <!--01/17-->
+  <!--</span>-->
+<!--</td>-->
+<!--<td class="todo-item">-->
+  <!---->
+    <!--<a class="tooltip-anchor" rel="tooltip" data-original-title="Julian Threatt" href="http://sterlinks.net/users/4ff5f076c1a4c57898000015">get stephen and anthony accounts for dev work</a>-->
+  <!---->
+<!--</td>-->
+<!--<td style="text-align:center;">-->
+  <!--<a href="http://sterlinks.net/dashboard#" class="close delete-task" style="margin-auto;">×</a>-->
+<!--</td>-->
+<!--</tr><tr class="todo-item-container"><td>-->
+  <!--<span class="muted pull-left">-->
+    <!--01/17-->
+  <!--</span>-->
+<!--</td>-->
+<!--<td class="todo-item">-->
+  <!---->
+    <!--<a class="tooltip-anchor" rel="tooltip" data-original-title="This is a new note" href="http://sterlinks.net/contact_trackers/50f087429cccb040eb000013/edit">ask Julian what to fix with this modal</a>-->
+  <!---->
+<!--</td>-->
+<!--<td style="text-align:center;">-->
+  <!--<a href="http://sterlinks.net/dashboard#" class="close delete-task" style="margin-auto;">×</a>-->
+<!--</td>-->
+<!--</tr><tr class="todo-item-container"><td>-->
+  <!--<span class="muted pull-left">-->
+    <!--01/19-->
+  <!--</span>-->
+<!--</td>-->
+<!--<td class="todo-item">-->
+  <!---->
+    <!--<a class="tooltip-anchor" rel="tooltip" data-original-title="Starwood Capital Group" href="http://sterlinks.net/companies/50d386f458ac057b490000a7">sign contract</a>-->
+  <!---->
+<!--</td>-->
+<!--<td style="text-align:center;">-->
+  <!--<a href="http://sterlinks.net/dashboard#" class="close delete-task" style="margin-auto;">×</a>-->
+<!--</td>-->
+<!--</tr></tbody>-->
+<!--</table>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--<div id="todo_action_container"></div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--</div>-->
+<!--<div class="row vertical-block" id="suggested_connections">-->
+<!--<div class="span12">-->
+<!--<div class="inner-tile new-users" style="margin-top:10px;">-->
+<!--<div class="mod-block-light inner-tile-header">-->
+<!--<div class="heading-text row-fluid section-heading" style="">-->
+<!--<div class="pull-left subheading">-->
+<!--Professionals on Sterlinks-->
+<!--</div>-->
+<!--<div class="pull-right">-->
+<!--<a class="btn btn-primary btn-mini modal-btn" data-target="#modal_shell" data-toggle="modal" data-type="invite" href="http://sterlinks.net/modal/invite_modal">-->
+<!--Invite to Sterlinks-->
+<!--</a>-->
+<!--<a class="btn help-popover" data-content="Connect to Sterlinks members to receive their latest news and updates." data-placement="left" href="http://sterlinks.net/dashboard#" rel="popover" style="margin-top:-1px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; font-weight:bold; padding-top:3px; padding-left:8px; padding-right:8px; padding-bottom:3px;" data-original-title="">-->
+<!--?-->
+<!--</a>-->
+
+
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="inner-tile-container" style="padding-top:0px;">-->
+<!--<div class="row-fluid" style="margin-left:10px;">-->
+<!--<div class="row-fluid">-->
+<!--<div class="span4" style="margin:6px;">-->
+<!--<div class="pull-left">-->
+<!--<div class="pull-left image">-->
+<!--<img alt="Paris_thumbnail" class="thumbnail" height="60" src="./Sterlinks_files/paris_thumbnail.jpg" width="60">-->
+<!--</div>-->
+<!--<div class="pull-right name" style="margin-left:8px;margin-top:5px;width:160px;">-->
+<!--<a href="http://sterlinks.net/users/50f5cff59cccb060a9000031" style="font-weight:bold;">meera balakumar</a>-->
+<!--<p style="margin:0px;">-->
+<!--<a href="http://sterlinks.net/companies/50eba7719cccb005d300016c">Sterling Analytics Limited Par...</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--<div class="pull-left" style="width:80px;">-->
+<!--<div class="connect tooltip-anchor" rel="tooltip" style="margin-top:5px;" data-original-title="Connect to this professional to follow news on them">-->
+<!--<a href="http://sterlinks.net/users/50f5cff59cccb060a9000031/follow" class="btn btn-primary btn-small remote_connect" data-remote="true" data-type="json">Connect</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+
+<!--<div class="span4" style="margin:6px;">-->
+<!--<div class="pull-left">-->
+<!--<div class="pull-left image">-->
+<!--<img alt="Paris_thumbnail" class="thumbnail" height="60" src="./Sterlinks_files/paris_thumbnail(1).jpg" width="60">-->
+<!--</div>-->
+<!--<div class="pull-right name" style="margin-left:8px;margin-top:5px;width:160px;">-->
+<!--<a href="http://sterlinks.net/users/50f5cf099cccb060a3000027" style="font-weight:bold;">meera balakumar</a>-->
+<!--<p style="margin:0px;">-->
+<!--<a href="http://sterlinks.net/companies/50eba7719cccb005d300016c">Sterling Analytics Limited Par...</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--<div class="pull-left" style="width:80px;">-->
+<!--<div class="connect tooltip-anchor" rel="tooltip" style="margin-top:5px;" data-original-title="Connect to this professional to follow news on them">-->
+<!--<a href="http://sterlinks.net/users/50f5cf099cccb060a3000027/follow" class="btn btn-primary btn-small remote_connect" data-remote="true" data-type="json">Connect</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+
+<!--<div class="span4" style="margin:6px;">-->
+<!--<div class="pull-left">-->
+<!--<div class="pull-left image">-->
+<!--<img alt="Chicago_thumbnail" class="thumbnail" height="60" src="./Sterlinks_files/chicago_thumbnail.jpg" width="60">-->
+<!--</div>-->
+<!--<div class="pull-right name" style="margin-left:8px;margin-top:5px;width:160px;">-->
+<!--<a href="http://sterlinks.net/users/50d3aafa58ac057b430000e3" style="font-weight:bold;">Theodore&nbsp; Eliopoulos</a>-->
+<!--<p style="margin:0px;">-->
+<!--<a href="http://sterlinks.net/companies/50d3aafa58ac057b430000e4">California Public Employees R...</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--<div class="pull-left" style="width:80px;">-->
+<!--<div class="connect tooltip-anchor" rel="tooltip" style="margin-top:5px;" data-original-title="Connect to this professional to follow news on them">-->
+<!--<a href="http://sterlinks.net/users/50d3aafa58ac057b430000e3/follow" class="btn btn-primary btn-small remote_connect" data-remote="true" data-type="json">Connect</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--<div class="row-fluid">-->
+<!--<div class="span4" style="margin:6px;">-->
+<!--<div class="pull-left">-->
+<!--<div class="pull-left image">-->
+<!--<img alt="London_thumbnail" class="thumbnail" height="60" src="./Sterlinks_files/london_thumbnail.jpg" width="60">-->
+<!--</div>-->
+<!--<div class="pull-right name" style="margin-left:8px;margin-top:5px;width:160px;">-->
+<!--<a href="http://sterlinks.net/users/50d3aafa58ac057b430000e5" style="font-weight:bold;">Andrew Chung</a>-->
+<!--<p style="margin:0px;">-->
+<!--<a href="http://sterlinks.net/companies/50d386f458ac057b490000a3">The Carlyle Group</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--<div class="pull-left" style="width:80px;">-->
+<!--<div class="connect tooltip-anchor" rel="tooltip" style="margin-top:5px;" data-original-title="Connect to this professional to follow news on them">-->
+<!--<a href="http://sterlinks.net/users/50d3aafa58ac057b430000e5/follow" class="btn btn-primary btn-small remote_connect" data-remote="true" data-type="json">Connect</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+
+<!--<div class="span4" style="margin:6px;">-->
+<!--<div class="pull-left">-->
+<!--<div class="pull-left image">-->
+<!--<img alt="Dubai_thumbnail" class="thumbnail" height="60" src="./Sterlinks_files/dubai_thumbnail.jpg" width="60">-->
+<!--</div>-->
+<!--<div class="pull-right name" style="margin-left:8px;margin-top:5px;width:160px;">-->
+<!--<a href="http://sterlinks.net/users/50d386f458ac057b490000ae" style="font-weight:bold;">Min Kim</a>-->
+<!--<p style="margin:0px;">-->
+<!--<a href="http://sterlinks.net/companies/50d386f558ac057b490000af">Blackrock</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--<div class="pull-left" style="width:80px;">-->
+<!--<div class="connect tooltip-anchor" rel="tooltip" style="margin-top:5px;" data-original-title="Connect to this professional to follow news on them">-->
+<!--<a href="http://sterlinks.net/users/50d386f458ac057b490000ae/follow" class="btn btn-primary btn-small remote_connect" data-remote="true" data-type="json">Connect</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+
+<!--<div class="span4" style="margin:6px;">-->
+<!--<div class="pull-left">-->
+<!--<div class="pull-left image">-->
+<!--<img alt="Paris_thumbnail" class="thumbnail" height="60" src="./Sterlinks_files/paris_thumbnail.jpg" width="60">-->
+<!--</div>-->
+<!--<div class="pull-right name" style="margin-left:8px;margin-top:5px;width:160px;">-->
+<!--<a href="http://sterlinks.net/users/50d386f558ac057b490000b0" style="font-weight:bold;">Matt  Myzak</a>-->
+<!--<p style="margin:0px;">-->
+<!--<a href="http://sterlinks.net/companies/50d386f558ac057b490000b1">Rockpoint Group</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--<div class="pull-left" style="width:80px;">-->
+<!--<div class="connect tooltip-anchor" rel="tooltip" style="margin-top:5px;" data-original-title="Connect to this professional to follow news on them">-->
+<!--<a href="http://sterlinks.net/users/50d386f558ac057b490000b0/follow" class="btn btn-primary btn-small remote_connect" data-remote="true" data-type="json">Connect</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--<div class="row-fluid">-->
+<!--<div class="span4" style="margin:6px;">-->
+<!--<div class="pull-left">-->
+<!--<div class="pull-left image">-->
+<!--<img alt="Chicago_thumbnail" class="thumbnail" height="60" src="./Sterlinks_files/chicago_thumbnail.jpg" width="60">-->
+<!--</div>-->
+<!--<div class="pull-right name" style="margin-left:8px;margin-top:5px;width:160px;">-->
+<!--<a href="http://sterlinks.net/users/50d386f458ac057b490000a1" style="font-weight:bold;">Jonathan Varni</a>-->
+<!--<p style="margin:0px;">-->
+<!--<a href="http://sterlinks.net/companies/50d386f458ac057b490000a0">Foundry Capital Partners</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--<div class="pull-left" style="width:80px;">-->
+<!--<div class="connect tooltip-anchor" rel="tooltip" style="margin-top:5px;" data-original-title="Connect to this professional to follow news on them">-->
+<!--<a href="http://sterlinks.net/users/50d386f458ac057b490000a1/follow" class="btn btn-primary btn-small remote_connect" data-remote="true" data-type="json">Connect</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+
+<!--<div class="span4" style="margin:6px;">-->
+<!--<div class="pull-left">-->
+<!--<div class="pull-left image">-->
+<!--<img alt="Vienna_thumbnail" class="thumbnail" height="60" src="./Sterlinks_files/vienna_thumbnail.jpg" width="60">-->
+<!--</div>-->
+<!--<div class="pull-right name" style="margin-left:8px;margin-top:5px;width:160px;">-->
+<!--<a href="http://sterlinks.net/users/50d386f458ac057b490000a2" style="font-weight:bold;">Alok  Gaur</a>-->
+<!--<p style="margin:0px;">-->
+<!--<a href="http://sterlinks.net/companies/50d386f458ac057b490000a3">The Carlyle Group</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--<div class="pull-left" style="width:80px;">-->
+<!--<div class="connect tooltip-anchor" rel="tooltip" style="margin-top:5px;" data-original-title="Connect to this professional to follow news on them">-->
+<!--<a href="http://sterlinks.net/users/50d386f458ac057b490000a2/follow" class="btn btn-primary btn-small remote_connect" data-remote="true" data-type="json">Connect</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+
+<!--<div class="span4" style="margin:6px;">-->
+<!--<div class="pull-left">-->
+<!--<div class="pull-left image">-->
+<!--<img alt="Chicago_thumbnail" class="thumbnail" height="60" src="./Sterlinks_files/chicago_thumbnail.jpg" width="60">-->
+<!--</div>-->
+<!--<div class="pull-right name" style="margin-left:8px;margin-top:5px;width:160px;">-->
+<!--<a href="http://sterlinks.net/users/50d386f458ac057b490000a4" style="font-weight:bold;">Jay  Kwan</a>-->
+<!--<p style="margin:0px;">-->
+<!--<a href="http://sterlinks.net/companies/50d386f458ac057b490000a5">Grove International Partners</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--<div class="pull-left" style="width:80px;">-->
+<!--<div class="connect tooltip-anchor" rel="tooltip" style="margin-top:5px;" data-original-title="Connect to this professional to follow news on them">-->
+<!--<a href="http://sterlinks.net/users/50d386f458ac057b490000a4/follow" class="btn btn-primary btn-small remote_connect" data-remote="true" data-type="json">Connect</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--<div class="row-fluid">-->
+<!--<div class="span4" style="margin:6px;">-->
+<!--<div class="pull-left">-->
+<!--<div class="pull-left image">-->
+<!--<img alt="Dubai_thumbnail" class="thumbnail" height="60" src="./Sterlinks_files/dubai_thumbnail.jpg" width="60">-->
+<!--</div>-->
+<!--<div class="pull-right name" style="margin-left:8px;margin-top:5px;width:160px;">-->
+<!--<a href="http://sterlinks.net/users/50d386f458ac057b490000a8" style="font-weight:bold;">Christine  Kwak</a>-->
+<!--<p style="margin:0px;">-->
+<!--<a href="http://sterlinks.net/companies/50d386f458ac057b490000a9">Aris Venture</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--<div class="pull-left" style="width:80px;">-->
+<!--<div class="connect tooltip-anchor" rel="tooltip" style="margin-top:5px;" data-original-title="Connect to this professional to follow news on them">-->
+<!--<a href="http://sterlinks.net/users/50d386f458ac057b490000a8/follow" class="btn btn-primary btn-small remote_connect" data-remote="true" data-type="json">Connect</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+
+<!--<div class="span4" style="margin:6px;">-->
+<!--<div class="pull-left">-->
+<!--<div class="pull-left image">-->
+<!--<img alt="Chicago_thumbnail" class="thumbnail" height="60" src="./Sterlinks_files/chicago_thumbnail.jpg" width="60">-->
+<!--</div>-->
+<!--<div class="pull-right name" style="margin-left:8px;margin-top:5px;width:160px;">-->
+<!--<a href="http://sterlinks.net/users/50d386f458ac057b490000aa" style="font-weight:bold;">Lloyd  Lee</a>-->
+<!--<p style="margin:0px;">-->
+<!--<a href="http://sterlinks.net/companies/50d386f458ac057b490000ab">Ingenuity Capital </a>-->
+<!--</p>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--<div class="pull-left" style="width:80px;">-->
+<!--<div class="connect tooltip-anchor" rel="tooltip" style="margin-top:5px;" data-original-title="Connect to this professional to follow news on them">-->
+<!--<a href="http://sterlinks.net/users/50d386f458ac057b490000aa/follow" class="btn btn-primary btn-small remote_connect" data-remote="true" data-type="json">Connect</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+
+<!--<div class="span4" style="margin:6px;">-->
+<!--<div class="pull-left">-->
+<!--<div class="pull-left image">-->
+<!--<img alt="London_thumbnail" class="thumbnail" height="60" src="./Sterlinks_files/london_thumbnail.jpg" width="60">-->
+<!--</div>-->
+<!--<div class="pull-right name" style="margin-left:8px;margin-top:5px;width:160px;">-->
+<!--<a href="http://sterlinks.net/users/50d386f458ac057b490000ac" style="font-weight:bold;">Thomas  Farrell </a>-->
+<!--<p style="margin:0px;">-->
+<!--<a href="http://sterlinks.net/companies/50d386f458ac057b490000ad">Savannah Fund</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--<div class="pull-left" style="width:80px;">-->
+<!--<div class="connect tooltip-anchor" rel="tooltip" style="margin-top:5px;" data-original-title="Connect to this professional to follow news on them">-->
+<!--<a href="http://sterlinks.net/users/50d386f458ac057b490000ac/follow" class="btn btn-primary btn-small remote_connect" data-remote="true" data-type="json">Connect</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="row vertical-block">-->
+<!--<div class="span8">-->
+<!--<div class="inner-tile" style="min-height:195px;">-->
+<!--<div class="mod-block-light inner-tile-header">-->
+<!--<div class="heading-text row-fluid section-heading" style="">-->
+<!--<div class="pull-left subheading">-->
+<!--RFP Smartforms-->
+<!--</div>-->
+<!--<div class="pull-right">-->
+<!--<a class="btn help-popover" data-content="View latest notifications for in-process due diligence." data-placement="bottom" href="http://sterlinks.net/dashboard#" rel="popover" style="margin-top:-1px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; font-weight:bold; padding-top:3px; padding-left:8px; padding-right:8px; padding-bottom:3px;" data-original-title="">-->
+<!--?-->
+<!--</a>-->
+
+
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="mod-block-white inner-tile-container" style="background:white;min-height:200px;">-->
+<!--<p class="muted align-center" style="margin-top:25px;">-->
+<!--To prospect potential capital partners on Sterlinks, please contact us. This feature is not enabled with under your current membership terms.-->
+<!--</p>-->
+<!--<p class="align-center vertical-block">-->
+<!--<a class="btn btn-success modal-btn request-cap-engine-btn" data-target="#modal_shell" data-toggle="modal" data-type="feedback" href="http://sterlinks.net/modal/feedback_modals/new?type=request_capital_engine" style="margin-right:5px;">-->
+<!--Request Access-->
+<!--</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="span4">-->
+<!--<div class="row-fluid">-->
+<!--<div class="span12">-->
+<!--<div class="inner-tile" style="min-height:195px; background:white;">-->
+<!--<div class="mod-block-light inner-tile-header">-->
+<!--<div class="heading-text row-fluid section-heading" style="">-->
+<!--<div class="subheading">-->
+<!--Due Diligence Administration Tasks-->
+<!--</div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--<div class="mod-block-white inner-tile-container" style="min-height:200px; background:white;">-->
+<!--<div class="row-fluid" style="border-bottom:1px solid #CCC;">-->
+<!--<div class="span1">-->
+<!--<i class="icon-check" style="margin-left:5px;"></i>-->
+<!--</div>-->
+<!--<div class="span11">-->
+<!--Upload-->
+<!--<a class="modal-btn" data-margin="-325px 0 0 -400px" data-target="#modal_shell" data-toggle="modal" data-width="800px" href="http://sterlinks.net/dashboard/step1?task=true">-->
+<!--LinkedIn-->
+<!--</a>-->
+<!--profile-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="row-fluid" style="border-bottom:1px solid #CCC;">-->
+<!--<div class="span1">-->
+<!--<i class="icon-check" style="margin-left:5px;"></i>-->
+<!--</div>-->
+<!--<div class="span11">-->
+<!--Identify-->
+<!--<a class="modal-btn" data-margin="-325px 0 0 -400px" data-target="#modal_shell" data-toggle="modal" data-width="800px" href="http://sterlinks.net/dashboard/step2?task=true">-->
+<!--partner opportunities-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="row-fluid" style="border-bottom:1px solid #CCC;">-->
+<!--<div class="span1">-->
+<!--<i class="icon-check" style="margin-left:5px;"></i>-->
+<!--</div>-->
+<!--<div class="span11">-->
+<!--Identify-->
+<!--<a class="modal-btn" data-margin="-325px 0 0 -400px" data-target="#modal_shell" data-toggle="modal" data-width="800px" href="http://sterlinks.net/dashboard/step3?task=true">-->
+<!--your strategy to partners-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="row-fluid" style="border-bottom:1px solid #CCC;">-->
+<!--<div class="span1">-->
+<!--<i class="icon-check" style="margin-left:5px;"></i>-->
+<!--</div>-->
+<!--<div class="span11">-->
+<!--Identify-->
+<!--<a class="modal-btn" data-margin="-325px 0 0 -400px" data-target="#modal_shell" data-toggle="modal" data-width="800px" href="http://sterlinks.net/dashboard/step4?task=true">-->
+<!--your real estate expertise-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--</div>-->
+
+<!--</div>-->
+<footer style="margin-top:10px;">
+<div class="row">
+<div class="align-center">
+<p class="align-center muted" style="font-size: 10px;">
+<!--COPYRIGHT STERLING ANALYTICS, INC. 2013. ALL RIGHTS RESERVED. PATENT PENDING.-->
+</p>
+</div>
+</div>
+
+<div class="modal hide fade" id="modal_shell" style="width:640px; margin-left:-320px;">
+<div class="modal-header"></div>
+<div class="modal-body">
+<img alt="Ajax-loader" src="./Sterlinks_files/ajax-loader-397bf884dd6fafbdd31e51c0f7c328d3.gif">
+</div>
+<div class="modal-footer"></div>
+</div>
+<script src="./Sterlinks_files/application-c54756d95653ef42ff56420607a3dc9f.js" type="text/javascript"></script>
+<script>
+$(function(){$.each(window._onload_functions,function(index,f){$(f)});});
+</script>
+</footer>
+
+
+<ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1031; top: 0px; left: 0px; display: none; "></ul></body></html>
